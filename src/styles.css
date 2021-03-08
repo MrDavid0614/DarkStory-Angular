@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/bg-fixed-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .3);
+    border-bottom: 5px solid #047BC7;
+}
+
+.logo {
+
+    width: 80px;
+
+}

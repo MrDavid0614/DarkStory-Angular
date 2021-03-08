@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { ImagesService } from './shared/images-service.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ImagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
