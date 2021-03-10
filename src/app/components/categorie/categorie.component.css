@@ -1,0 +1,23 @@
+.categorie-card {
+    background-color: #fff;
+    width: 177px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 2px;
+}
+
+.categorie-card .categorie-image {
+    background-color: rgb(75, 21, 21);
+    width: 177px;
+}
+
+.categorie-card .card-body {
+    padding: 0 15px 20px 15px;
+}
+
+.categorie-card .card-body .categorie-title {
+    font-size: 16px;
+}
+
+.categorie-card .card-body p {
+    font-size: 14px;
+}

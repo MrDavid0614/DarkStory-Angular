@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .3);
+    border-bottom: 5px solid #047BC7;
+}
+
+.logo {
+    width: 80px;
+}

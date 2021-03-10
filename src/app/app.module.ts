@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CategoriesComponent } from './components/categories/categories.component';
-import { ImagesService } from './shared/images-service.service';
+import { ImagesService } from './shared/services/images-service.service';
+import { CategorieComponent } from './components/categorie/categorie.component';
+import { ContributorComponent } from './components/contributor/contributor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategorieComponent,
+    ContributorComponent
   ],
   imports: [
     BrowserModule,

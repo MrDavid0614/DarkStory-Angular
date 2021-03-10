@@ -1,7 +1,3 @@
-:root {
-    --primary-color: #047BC7;
-}
-
 .container {
     
     margin: 50px;
@@ -28,6 +24,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    outline: none;
 }
 
 form .form-label {

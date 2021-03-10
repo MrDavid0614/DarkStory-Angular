@@ -1,1 +1,25 @@
-<p>categories works!</p>
+<div class="container">
+
+    <div class="categories-container">
+
+        <h1 class="container-title">CATEGORIES</h1>
+        
+        <div class="categories-list">
+
+            <app-categorie *ngFor="let categorie of categoriesList" [categorie]="categorie"></app-categorie>
+            
+        </div>
+
+    </div>
+
+    <div class="contributors-container">
+
+        <h2 class="container-title">TOP</h2>
+
+        <app-contributor *ngFor="let contributor of contributorsList; let i = index" [contributor]="contributor" [isOdd]=" i % 2 === 0"></app-contributor>
+
+        <a routerLink="/register" class="contribute-btn">CONTRIBUTE</a>
+    </div>
+
+</div>
+
