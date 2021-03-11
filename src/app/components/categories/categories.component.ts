@@ -23,15 +23,15 @@ export class CategoriesComponent implements OnInit {
               ) { 
 
     this.images_path = imagesService.images_path;
-    this.getcategories();
+    this.getCategories();
     this.getContributors();
   }
 
   ngOnInit(): void {
   }
 
-  getcategories(){
-    this.categoriesList = this.categoriesService.getcategories();
+  getCategories(){
+    this.categoriesList = this.categoriesService.getCategories();
   }
 
   getContributors(){
