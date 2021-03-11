@@ -1,0 +1,49 @@
+.category-card {
+    background-color: #fff;
+    width: 177px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 2px;
+}
+
+.category-card .image-container {
+    background-color: rgb(75, 21, 21);
+    width: 177px;
+    position: relative;
+}
+
+.category-card .image-container .category-name {
+    padding: 3px 15px 3px 4px;
+    color: #fff;
+  }
+
+.category-card .image-container .category-name.Items {
+  background-color: rgb(195, 195, 4);
+}
+
+.category-card .image-container .category-name.Monsters {
+    background-color: rgb(233, 109, 202);
+}
+
+.category-card .image-container .category-name.World {
+    background-color: rgb(147, 200, 87);
+}
+
+.category-card .image-container .category-name.Skills {
+    background-color: rgb(50, 79, 158);
+}
+
+.category-card .image-container .category-name.Character {
+    background-color: rgb(172, 117, 158);
+}
+
+.category-card .card-body {
+    padding: 5px 15px 20px 15px;
+}
+
+.category-card .card-body .category-title {
+    font-size: 16px;
+}
+
+.category-card .card-body p {
+    font-size: 14px;
+}

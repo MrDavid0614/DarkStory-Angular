@@ -9,7 +9,7 @@
     color: #fff;
     font-size: 20px;
 }
-.container .categories-container .categories-list {
+.container .categorys-container .categorys-list {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

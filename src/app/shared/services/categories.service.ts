@@ -1,49 +1,49 @@
 import { Injectable } from '@angular/core';
-import { Categorie } from '../models/categorie';
+import { category } from '../models/category';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriesService {
 
-  private categoriesList: Categorie[] = [
+  private categoriesList: category[] = [
     {
-      categorie: "Items",
+      categoryName: "Items",
       title: "Recipes",
       desc: "Game food crafting recipes"
     },
     {
-      categorie: "Monsters",
+      categoryName: "Monsters",
       title: "Enemies",
       desc: "Game enemies and information..."
     },
     {
-      categorie: "Items",
+      categoryName: "Items",
       title: "Equipment",
       desc: "This is a card description"
     },
     {
-      categorie: "World",
+      categoryName: "World",
       title: "Locations",
       desc: "This is a card description"
     },
     {
-      categorie: "World",
+      categoryName: "World",
       title: "Quests",
       desc: "Game food crafting recipes"
     },
     {
-      categorie: "Skills",
+      categoryName: "Skills",
       title: "Skills",
       desc: "Game characters skills"
     },
     {
-      categorie: "Character",
+      categoryName: "Character",
       title: "Classes",
       desc: "This is a card description..."
     },
     {
-      categorie: "Character",
+      categoryName: "Character",
       title: "Builds",
       desc: "This is a card description..."
     },
@@ -51,7 +51,7 @@ export class CategoriesService {
 
   constructor() { }
 
-  getCategories(): Categorie[] {
+  getcategories(): category[] {
     return this.categoriesList;
   }
   

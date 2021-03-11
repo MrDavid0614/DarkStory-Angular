@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CategoriesService } from 'src/app/shared/services/categories.service';
 import { ImagesService } from 'src/app/shared/services/images-service.service';
-import { Categorie } from 'src/app/shared/models/categorie';
+import { category } from 'src/app/shared/models/category';
 import { Contributor } from 'src/app/shared/models/contributor';
 import { ContributorsService } from 'src/app/shared/services/contributors.service';
 
@@ -14,7 +14,7 @@ import { ContributorsService } from 'src/app/shared/services/contributors.servic
 export class CategoriesComponent implements OnInit {
 
   images_path: string;
-  categoriesList: Categorie[];
+  categoriesList: category[];
   contributorsList: Contributor[];
 
   constructor(imagesService: ImagesService, 
@@ -23,15 +23,15 @@ export class CategoriesComponent implements OnInit {
               ) { 
 
     this.images_path = imagesService.images_path;
-    this.getCategories();
+    this.getcategories();
     this.getContributors();
   }
 
   ngOnInit(): void {
   }
 
-  getCategories(){
-    this.categoriesList = this.categoriesService.getCategories();
+  getcategories(){
+    this.categoriesList = this.categoriesService.getcategories();
   }
 
   getContributors(){

@@ -4,17 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
-import { CategoriesComponent } from './components/categories/categories.component';
 import { ImagesService } from './shared/services/images-service.service';
-import { CategorieComponent } from './components/categorie/categorie.component';
+import { CategoryComponent } from './components/category/category.component';
 import { ContributorComponent } from './components/contributor/contributor.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     CategoriesComponent,
-    CategorieComponent,
+    CategoryComponent,
     ContributorComponent
   ],
   imports: [

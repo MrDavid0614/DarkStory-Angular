@@ -1,15 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ImagesService } from 'src/app/shared/services/images-service.service';
-import { Categorie } from 'src/app/shared/models/categorie';
+import { category } from 'src/app/shared/models/category';
 
 @Component({
-  selector: 'app-categorie',
-  templateUrl: './categorie.component.html',
-  styleUrls: ['./categorie.component.css']
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.css']
 })
-export class CategorieComponent implements OnInit {
+export class CategoryComponent implements OnInit {
 
-  @Input() categorie: Categorie;
+  @Input() category: category;
   images_path: string;
 
   constructor(imagesService: ImagesService) { 
