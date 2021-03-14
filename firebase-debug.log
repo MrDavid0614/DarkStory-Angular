@@ -1,0 +1,20 @@
+[debug] [2021-03-14T05:21:39.147Z] ----------------------------------------------------------------------
+[debug] [2021-03-14T05:21:39.163Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-03-14T05:21:39.172Z] CLI Version:   9.6.1
+[debug] [2021-03-14T05:21:39.173Z] Platform:      win32
+[debug] [2021-03-14T05:21:39.175Z] Node Version:  v12.18.3
+[debug] [2021-03-14T05:21:39.182Z] Time:          Sun Mar 14 2021 01:21:39 GMT-0400 (Atlantic Standard Time)
+[debug] [2021-03-14T05:21:39.184Z] ----------------------------------------------------------------------
+[debug] [2021-03-14T05:21:39.186Z] 
+[debug] [2021-03-14T05:21:39.278Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-14T05:21:39.282Z] > authorizing via signed-in user
+[debug] [2021-03-14T05:21:39.284Z] [iam] checking project pokedex-ba763 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-14T05:21:39.298Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pokedex-ba763:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-14T05:21:39.696Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Mar 2021 05:22:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=123","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-14T05:21:39.710Z] > refreshing access token with scopes: []
+[debug] [2021-03-14T05:21:39.711Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-14T05:21:39.966Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 14 Mar 2021 05:22:43 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-14T05:21:40.144Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pokedex-ba763 [none]
+[debug] [2021-03-14T05:21:40.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pokedex-ba763 200
