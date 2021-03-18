@@ -12,7 +12,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_POKEDEX_BA763 }}'
-          projectId: pokedex-ba763
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DARKSTORY_ANGULAR06 }}'
+          projectId: darkstory-angular06
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
