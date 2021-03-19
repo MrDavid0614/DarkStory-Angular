@@ -1,0 +1,81 @@
+$font: "Montserrat", sans-serif;
+
+.container {
+    
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: $font;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+
+        .image-container {
+            margin-left: 50px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        outline: none;
+
+        .form-label {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            margin-bottom: 5px;
+            padding: 10px 0 10px 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .5);
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-create-account {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #047BC7;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $font;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #026aac;
+            }
+        }
+
+        .form-terms {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+
+            a {
+                text-decoration: none;
+                color: #047BC7;
+                font-size: 15px;
+
+                &:hover {
+                    color: #026aac;
+                }
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ import { ContributorsService } from 'src/app/shared/services/contributors.servic
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
+  styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
 

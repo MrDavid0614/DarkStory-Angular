@@ -1,0 +1,77 @@
+$white: #fff;
+$background-blue: #047BC7;
+$hover-blue: #026aac;
+$font: "Montserrat", sans-serif;
+
+.container {
+    margin: 50px;
+    display:flex;
+    justify-content: center;
+    font-family: $font;
+
+    .categories-container {
+
+        .container-title {
+            color: $white;
+            font-size: 20px;
+        }
+    
+        .categories-list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            app-category:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+    }
+    
+    .contributors-container {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 50px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .19);
+        color: $white;
+
+        .container-title {
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-bottom: 30px;
+
+            &::after {
+                content: "";
+                height: 500px;
+                width: 200px;
+                background-color: black;
+            }
+        }
+
+        .contribute-btn {
+            margin: 25px 15px;
+            padding: 15px;
+            color: $white;
+            text-align: center;
+            text-decoration: none;
+            font-family: $font;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: $background-blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: $hover-blue;
+            
+            }
+        }
+    }
+}

@@ -5,10 +5,10 @@ div {
     font-size: 13.5px;
     border-top: 1px solid rgba(0, 0, 0, .3);
     border-bottom: 1px solid rgba(0, 0, 0, .3);
-}
 
-div .contributor-name {
-    font-weight: bold;
+    .contributor-name {
+        font-weight: bold;
+    }
 }
 
 .odd-element {

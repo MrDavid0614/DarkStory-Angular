@@ -5,7 +5,7 @@ import { category } from 'src/app/shared/models/category';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  styleUrls: ['./category.component.scss']
 })
 export class CategoryComponent implements OnInit {
 
