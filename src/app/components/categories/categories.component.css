@@ -16,6 +16,10 @@
     gap: 20px;
 }
 
+.container .categories-container .categories-list app-category:hover {
+    transform: translateY(-10px);
+}
+
 .container .contributors-container {
     display: flex;
     flex-direction: column;
