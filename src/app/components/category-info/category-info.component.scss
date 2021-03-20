@@ -1,0 +1,71 @@
+.container {
+    font-family: "Monserrat", sans-serif;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #fff;
+
+    main {
+        width: 50%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .h1{
+            font-size: 22px;
+        }
+    }
+
+    aside {
+        background-color: rgba(23, 23, 29, 0.9);
+
+        .image-container {
+            background-color: rgb(75, 21, 21);
+            width: 177px;
+            border-bottom: 5px solid #047BC7;
+        }
+
+        .info-container {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-bottom: 8px;
+            }
+
+            .category-name {
+                padding: 3px 15px 3px 4px;
+                margin-bottom: 10px;
+              }
+            
+            .category-name.Items {
+              background-color: rgb(195, 195, 4);
+            }
+            
+            .category-name.Monsters {
+                background-color: rgb(233, 109, 202);
+            }
+            
+            .category-name.World {
+                background-color: rgb(147, 200, 87);
+            }
+            
+            .category-name.Skills {
+                background-color: rgb(50, 79, 158);
+            }
+            
+            .category-name.Character {
+                background-color: rgb(172, 117, 158);
+            }
+
+            .author {
+                font-size: 14px;
+            }
+        }
+    }
+}

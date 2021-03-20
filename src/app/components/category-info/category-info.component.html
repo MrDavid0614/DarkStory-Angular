@@ -1,0 +1,25 @@
+<div class="container">
+    <aside>
+        <div class="image-container">
+            <img src="{{ images_path }}category-icon.png.png" alt="category image" class="category-image">
+        </div>
+
+        <div class="info-container">
+            <h2>CATEGORY</h2>
+            <span class="category-name {{category.categoryName}}">{{ category.categoryName }}</span>
+            <h2>AUTHORS</h2>
+            <span *ngFor="let author of category.authors" class="author">{{ author }}</span>
+        </div>
+    </aside>
+    <main>
+        <h1 class="h1">{{ category.title }}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere, saepe incidunt dolorem consequatur officiis unde ex accusamus repellendus aperiam nihil corrupti veniam hic omnis debitis dolores tempore. Illo, corporis?
+        Iusto eaque, fugit officiis voluptatibus doloremque facilis cum eos nobis, illo amet qui nesciunt! At, porro alias consequuntur molestiae cupiditate ducimus repellendus necessitatibus sunt molestias sit id, dolore, quibusdam dignissimos.
+        Hic iusto maxime libero explicabo quam earum dolorum itaque officiis sunt asperiores eligendi possimus aspernatur nulla minus cum consequatur omnis, veritatis suscipit eius unde soluta, animi odio. Harum, ut! Ea.
+        Omnis earum possimus eligendi nihil doloremque modi harum maiores in asperiores repudiandae aperiam accusamus quaerat itaque cupiditate mollitia blanditiis fuga velit minus architecto ipsam adipisci deserunt, dolores eveniet praesentium? Tenetur.</p>
+        <h2 class="h1">Overview</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit expedita distinctio animi, totam quisquam aspernatur magni quia asperiores in doloremque, at molestiae similique facilis perferendis beatae laboriosam amet possimus ratione!
+        Non fuga rem cumque eligendi maxime aperiam, vel minima mollitia praesentium inventore porro. Quae praesentium cum vel omnis dolore ipsum ratione, error rem minima excepturi aliquid ducimus sequi a iste.
+        Commodi quod nesciunt in blanditiis? Consectetur error nostrum voluptatem exercitationem excepturi fugiat minus quae eum veniam ducimus dolorem, vel magni architecto autem natus obcaecati animi dolorum, ad amet cupiditate aliquid?</p>
+    </main>
+</div>

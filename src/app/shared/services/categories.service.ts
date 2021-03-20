@@ -1,58 +1,87 @@
 import { Injectable } from '@angular/core';
-import { category } from '../models/category';
+import { Category } from '../models/category';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriesService {
 
-  private categoriesList: category[] = [
+  private categoriesList: Category[] = [
     {
+      id: 1,
       categoryName: "Items",
       title: "Recipes",
-      desc: "Game food crafting recipes"
+      image: "",
+      desc: "Game food crafting recipes",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 2,
       categoryName: "Monsters",
       title: "Enemies",
-      desc: "Game enemies and information..."
+      image: "",
+      desc: "Game enemies and information...",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 3,
       categoryName: "Items",
       title: "Equipment",
-      desc: "This is a card description"
+      image: "",
+      desc: "This is a card description",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 4,
       categoryName: "World",
       title: "Locations",
-      desc: "This is a card description"
+      image: "",
+      desc: "This is a card description",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 5,
       categoryName: "World",
       title: "Quests",
-      desc: "Game food crafting recipes"
+      image: "",
+      desc: "Game food crafting recipes",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 6,
       categoryName: "Skills",
       title: "Skills",
-      desc: "Game characters skills"
+      image: "",
+      desc: "Game characters skills",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 7,
       categoryName: "Character",
       title: "Classes",
-      desc: "This is a card description..."
+      image: "",
+      desc: "This is a card description...",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
     {
+      id: 8,
       categoryName: "Character",
       title: "Builds",
-      desc: "This is a card description..."
+      image: "",
+      desc: "This is a card description...",
+      authors: ['Author 1', 'Author 2', 'Author 3']
     },
   ];
 
   constructor() { }
 
-  getCategories(): category[] {
+  getCategories(): Category[] {
     return this.categoriesList;
+  }
+
+  getCategoryById(id:number): Category {
+    const category = this.categoriesList.find(category => category.id === id);
+    return category;
   }
   
 }

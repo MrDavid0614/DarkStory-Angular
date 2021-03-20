@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ImagesService } from 'src/app/shared/services/images-service.service';
-import { category } from 'src/app/shared/models/category';
+import { Category } from 'src/app/shared/models/category';
 
 @Component({
   selector: 'app-category',
@@ -9,13 +9,11 @@ import { category } from 'src/app/shared/models/category';
 })
 export class CategoryComponent implements OnInit {
 
-  @Input() category: category;
+  @Input() category: Category;
   images_path: string;
 
   constructor(imagesService: ImagesService) { 
-
     this.images_path = imagesService.images_path;
-
   }
 
   ngOnInit(): void {
