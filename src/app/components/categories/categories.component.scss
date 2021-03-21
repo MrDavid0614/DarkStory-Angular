@@ -80,7 +80,17 @@ $font: "Montserrat", sans-serif;
 
 @include responsive('phone'){
     .container{
-        margin: 0;
+        margin-left: 2px;
+        flex-direction: column;
+    }
+
+    .categories-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include responsive('tablet'){
+    .container{
         flex-direction: column;
     }
 
