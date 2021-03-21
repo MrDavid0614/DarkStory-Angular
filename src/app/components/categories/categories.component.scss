@@ -1,3 +1,5 @@
+@import '../../../scss/breakpoints.scss';
+
 $white: #fff;
 $background-blue: #047BC7;
 $hover-blue: #026aac;
@@ -73,5 +75,16 @@ $font: "Montserrat", sans-serif;
             
             }
         }
+    }
+}
+
+@include responsive('phone'){
+    .container{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .categories-list {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }

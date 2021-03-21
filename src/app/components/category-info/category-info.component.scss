@@ -1,3 +1,5 @@
+@import '../../../scss/breakpoints.scss';
+
 .container {
     font-family: "Monserrat", sans-serif;
     height: 500px;
@@ -15,6 +17,10 @@
 
         .h1{
             font-size: 22px;
+        }
+
+        p {
+            word-spacing: 0.3em;
         }
     }
 
@@ -67,5 +73,11 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+@include responsive('phone'){
+    .container{
+        flex-direction: row-reverse;
     }
 }
