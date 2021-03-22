@@ -82,19 +82,26 @@ $font: "Montserrat", sans-serif;
     .container{
         margin-left: 2px;
         flex-direction: column;
+
+        .categories-container{
+
+            .categories-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     }
 
-    .categories-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @include responsive('tablet'){
     .container{
         flex-direction: column;
-    }
 
-    .categories-list {
-        grid-template-columns: repeat(2, 1fr) !important;
+        .categories-container{
+
+            div.categories-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     }
 }

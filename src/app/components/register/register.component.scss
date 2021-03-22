@@ -96,3 +96,17 @@ $font: "Montserrat", sans-serif;
         }
     }
 }
+
+@include responsive('tablet') {
+    .form-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .image-container{
+        
+        .image {
+            width: 350px;
+        }
+    }
+}
